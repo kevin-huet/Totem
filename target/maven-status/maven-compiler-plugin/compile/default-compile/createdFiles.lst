@@ -26,6 +26,7 @@ com\github\ventuss\Command\totem\StopTotemCommand.class
 com\github\ventuss\game\Status.class
 com\github\ventuss\Command\totem\SetTotemCommand.class
 com\github\ventuss\utils\Utilities.class
+com\github\ventuss\game\towny\TownyTotem.class
 com\github\ventuss\manager\Manager.class
 com\github\ventuss\manager\command\CommandManager.class
 com\github\ventuss\config\TotemConfiguration.class

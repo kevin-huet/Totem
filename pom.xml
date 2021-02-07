@@ -33,10 +33,6 @@
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
         </repository>
-        <repository>
-            <id>articdive-repo</id>
-            <url>https://nexus.articdive.de/repository/maven-public/</url>
-        </repository>
     </repositories>
 
     <dependencies>
@@ -77,9 +73,9 @@
             <version>v1.4.3</version>
         </dependency>
         <dependency>
-            <groupId>com.palmergames</groupId>
+            <groupId>com.github.TownyAdvanced</groupId>
             <artifactId>Towny</artifactId>
-            <version>0.93.0.5</version>
+            <version>0.96.7.0</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>

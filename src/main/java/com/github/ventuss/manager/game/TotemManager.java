@@ -6,10 +6,13 @@ import com.github.ventuss.game.Status;
 import com.github.ventuss.game.factions.Totem;
 import com.github.ventuss.game.factionsUUID.UUIDTotem;
 import com.github.ventuss.game.legacyFactions.LegacyTotem;
+import com.github.ventuss.game.towny.TownyTotem;
 import com.github.ventuss.manager.IManager;
 import com.github.ventuss.manager.Manager;
 import com.massivecraft.factions.entity.Faction;
 import com.massivecraft.factions.entity.MPlayer;
+import com.palmergames.bukkit.towny.object.Nation;
+import com.palmergames.bukkit.towny.object.Town;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 
@@ -98,26 +101,47 @@ public class TotemManager implements IManager {
         return null;
     }
 
-    public Totem findTotemByStatus(Status status) {
+    public IGame findTotemByStatus(Status status) {
         List<IGame> games = Manager.getInstance().gameManager.getGames();
 
         for (IGame game : games) {
             if (game.getStatus() == status) {
-                return (Totem) game;
+                return game;
             }
         }
         return null;
     }
 
-    public Totem findTotemBySize(int size) {
+    public IGame findTotemBySize(int size) {
         List<IGame> games = Manager.getInstance().gameManager.getGames();
 
         for (IGame game : games) {
             if (game.getSize() == size) {
-                return (Totem) game;
+                return game;
             }
         }
         return null;
     }
 
+    public IGame findTotemByTown(Town town) {
+        List<IGame> games = Manager.getInstance().gameManager.getGames();
+
+        for (IGame game : games) {
+            if (((TownyTotem) game).getActualTown() == town) {
+                return game;
+            }
+        }
+        return null;
+    }
+
+    public IGame findTotemByNation(Nation nation) {
+        List<IGame> games = Manager.getInstance().gameManager.getGames();
+
+        for (IGame game : games) {
+            if (((TownyTotem) game).getActualNation() == nation) {
+                return game;
+            }
+        }
+        return null;
+    }
 }
