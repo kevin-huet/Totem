@@ -1,0 +1,17 @@
+package com.github.ventuss.config;
+
+public enum MessageType {
+    GLOBAL_SET,
+    GLOBAL_SPAWN,
+    GLOBAL_CHANGE_LOCATION,
+    GLOBAL_RESET,
+    GLOBAL_CHANGE_SIZE,
+    GLOBAL_STOP,
+    TOTEM_BREAK_BLOCK,
+    TOTEM_BREAK_CANCEL,
+    TOTEM_FIRST_BREAK_BLOCK,
+    TOTEM_WIN,
+    TOTEM_SPAWN,
+    TOTEM_TIMER,
+    TOTEM_STOP,
+}

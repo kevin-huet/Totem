@@ -1,0 +1,26 @@
+name: TotemPlugin
+version: 1.0
+main: com.github.ventuss.App
+author: Ventuss
+softdepend: [Factions, LegacyFactions]
+commands:
+  totem-spawn:
+    description: start totem
+  totem-set:
+    description: create and set totem location
+  totem-size:
+    description: change totem size
+  totem-stop:
+    description: stop totem
+  totem-reset:
+    description: reset totem
+  totem-list:
+    description: show all totem created
+  totem-info:
+    description: show totem status
+  totem-unset:
+    description: unset totem
+  totem-block-material:
+    description: change totem block material
+  totem-item-material:
+    description: change item material
