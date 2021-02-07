@@ -144,94 +144,118 @@ public class UUIDTotem implements IGame {
         this.actualFaction = actualFaction;
     }
 
+    @Override
     public int getSize() {
         return size;
     }
 
+    @Override
     public void setSize(int size) {
         this.size = size;
     }
 
+    @Override
     public float getTimer() {
         return timer;
     }
 
+    @Override
     public void setTimer(float timer) {
         this.timer = timer;
     }
 
+    @Override
     public Location getLocation() {
         return location;
     }
 
+    @Override
     public void setLocation(Location location) {
         this.location = location;
     }
 
+    @Override
     public Material getBlockMaterial() {
         return this.blockMaterial;
     }
 
+
+    @Override
     public void setBlockMaterial(Material blockMaterial) {
         this.blockMaterial = blockMaterial;
     }
 
+    @Override
     public Status getStatus() {
         return this.status;
     }
 
+    @Override
     public void setStatus(Status status) {
         this.status = status;
     }
 
+    @Override
     public boolean timerUsed() {
         return timer != -1;
     }
 
+    @Override
     public List<Block> getBlocks() {
         return blocks;
     }
 
+    @Override
     public void addBlock(Block block) {
         this.blocks.add(block);
     }
 
+    @Override
     public void setBlocks(List<Block> blocks) {
         this.blocks = blocks;
     }
 
+    @Override
     public int getPtsForWin() {
         return ptsForWin;
     }
 
+    @Override
     public void setPtsForWin(int ptsForWin) {
         this.ptsForWin = ptsForWin;
     }
 
+    @Override
     public String getName() {
         return name;
     }
 
+    @Override
     public void setName(String name) {
         this.name = name;
     }
 
+    @Override
     public int getActualSize() {
         return actualSize;
     }
 
+    @Override
     public void setActualSize(int actualSize) {
         this.actualSize = actualSize;
     }
 
+    @Override
     public Material getItemInteract() {
         return itemInteract;
     }
 
+    @Override
     public void setItemInteract(Material itemInteract) {
         this.itemInteract = itemInteract;
     }
 
+    @Override
     public String getFactionName() {
         if (this.actualFaction == null)
             return null;

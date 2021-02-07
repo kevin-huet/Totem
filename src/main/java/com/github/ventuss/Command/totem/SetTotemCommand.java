@@ -24,12 +24,13 @@ public class SetTotemCommand extends MessageDefaultValue implements CommandExecu
 
     private void createAndSetTotem(Player player, String name) {
         IGame totem = Manager.getInstance().totemManager.findByName(name);
-        if (totem == null)
+        if (totem == null) {
             totem = App.getInstance().newGame(name);
+            Manager.getInstance().gameManager.addGame(totem);
+        }
         totem.setLocation(player.getLocation());
         App.manager.configManager.totemConfiguration.setLocationConfig(totem);
         App.manager.configManager.totemConfiguration.setItemInteractionConfig(totem);
-        Manager.getInstance().gameManager.addGame(totem);
         totem.generateTotem();
         player.sendMessage(TotemSet);
     }
