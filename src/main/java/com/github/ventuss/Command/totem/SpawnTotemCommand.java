@@ -14,8 +14,10 @@ public class SpawnTotemCommand extends MessageDefaultValue implements ICommand {
 
     @Override
     public void launch(Player player, String[] strings) {
-        if (strings.length < 2)
+        if (strings.length < 2) {
+            player.sendMessage(ChatColor.RED+"usage : /totem spawn [name]");
             return;
+        }
         spawnTotem(player, strings[1]);
     }
 

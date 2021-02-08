@@ -1,5 +1,6 @@
 package com.github.ventuss.Command.totem;
 
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -10,6 +11,9 @@ public class StopTotemCommand implements ICommand {
 
     @Override
     public void launch(Player player, String[] strings) {
-
+        if (strings.length < 2) {
+            player.sendMessage(ChatColor.RED+"usage : /totem stop [name]");
+            return;
+        }
     }
 }

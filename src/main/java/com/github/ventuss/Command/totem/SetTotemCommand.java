@@ -5,6 +5,7 @@ import com.github.ventuss.config.MessageDefaultValue;
 import com.github.ventuss.game.IGame;
 import com.github.ventuss.game.factions.Totem;
 import com.github.ventuss.manager.Manager;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -14,8 +15,10 @@ public class SetTotemCommand extends MessageDefaultValue implements ICommand {
 
     @Override
     public void launch(Player player, String[] strings) {
-        if (strings.length < 2)
+        if (strings.length < 2) {
+            player.sendMessage(ChatColor.RED+"usage : /totem set [name]");
             return;
+        }
         createAndSetTotem(player, strings[1]);
     }
 

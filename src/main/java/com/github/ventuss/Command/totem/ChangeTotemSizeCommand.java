@@ -14,8 +14,10 @@ public class ChangeTotemSizeCommand implements ICommand {
 
     @Override
     public void launch(Player player, String[] strings) {
-        if (strings.length < 3)
+        if (strings.length < 3) {
+            player.sendMessage(ChatColor.RED+"usage : /totem size [name] [size]");
             return;
+        }
         changeTotemSize(player, strings[1], strings[2]);
     }
 

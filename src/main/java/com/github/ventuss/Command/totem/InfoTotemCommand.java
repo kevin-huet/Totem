@@ -13,8 +13,10 @@ public class InfoTotemCommand implements ICommand {
 
     @Override
     public void launch(Player player, String[] strings) {
-        if (strings.length < 2)
+        if (strings.length < 2) {
+            player.sendMessage(ChatColor.RED+"usage : /totem info [name]");
             return;
+        }
         printTotemInfo(player, strings[1]);
     }
 
