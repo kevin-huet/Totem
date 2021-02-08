@@ -31,14 +31,14 @@ Permissions :
 - totem.stop
 
 Commands :
-/totem help [page] - help
-/totem set [name] - create and set totem
-/totem unset [name] - delete and unset totem
-/totem spawn [name] - spawn totem
-/totem stop [name] - stop totem
-/totem item [name] [material] - set item material
-/totem block [name] [material] - set block material
-/totem reset [name] - reset totem
-/totem info [name] - show totem info
-/totem list - show list of totems
-/totem size [name] [size] - set totem size
+- /totem help [page] - help
+- /totem set [name] - create and set totem
+- /totem unset [name] - delete and unset totem
+- /totem spawn [name] - spawn totem
+- /totem stop [name] - stop totem 
+- /totem item [name] [material] - set item material
+- /totem block [name] [material] - set block material
+- /totem reset [name] - reset totem
+- /totem info [name] - show totem info
+- /totem list - show list of totems
+- /totem size [name] [size] - set totem size
