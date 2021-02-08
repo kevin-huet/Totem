@@ -15,6 +15,10 @@ public class ChangeTotemMaterialCommand extends MessageDefaultValue implements I
 
     @Override
     public void launch(Player player, String[] strings) {
+        if (!player.hasPermission("totem.change.block.material")) {
+            player.sendMessage(ChatColor.RED+"You don't have permission to do that");
+            return;
+        }
         if (strings.length < 3) {
             player.sendMessage(ChatColor.RED+"usage : /totem block [name] [material]");
             return;

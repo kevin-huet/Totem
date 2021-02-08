@@ -18,6 +18,7 @@ public class CommandManager implements IManager {
     public SpawnTotemCommand spawnTotemCommand;
     public StopTotemCommand stopTotemCommand;
     public UnsetTotemCommand unsetTotemCommand;
+    public HelpCommand helpCommand;
 
     public CommandManager() {
         changeInteractItemCommand = new ChangeInteractItemCommand();
@@ -30,6 +31,7 @@ public class CommandManager implements IManager {
         spawnTotemCommand = new SpawnTotemCommand();
         stopTotemCommand = new StopTotemCommand();
         unsetTotemCommand = new UnsetTotemCommand();
+        helpCommand = new HelpCommand();
         App.getInstance().getCommand("totem").setExecutor(new TotemCommand());
     }
 }

@@ -14,6 +14,10 @@ public class ChangeTotemSizeCommand implements ICommand {
 
     @Override
     public void launch(Player player, String[] strings) {
+        if (!player.hasPermission("totem.change.size")) {
+            player.sendMessage(ChatColor.RED+"You don't have permission to do that");
+            return;
+        }
         if (strings.length < 3) {
             player.sendMessage(ChatColor.RED+"usage : /totem size [name] [size]");
             return;

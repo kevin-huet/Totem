@@ -37,6 +37,8 @@ public class TotemCommand implements CommandExecutor {
                 break;
             case "item": manager.changeInteractItemCommand.launch((Player) commandSender, strings);
                 break;
+            case "help": manager.helpCommand.launch((Player) commandSender, strings);
+                break;
             default:
                 break;
         }

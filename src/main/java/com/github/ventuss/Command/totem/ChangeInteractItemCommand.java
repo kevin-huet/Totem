@@ -14,6 +14,10 @@ public class ChangeInteractItemCommand implements ICommand {
 
     @Override
     public void launch(Player player, String[] strings) {
+        if (!player.hasPermission("totem.change.interact.item")) {
+            player.sendMessage(ChatColor.RED+"You don't have permission to do that");
+            return;
+        }
         if (strings.length < 3) {
             player.sendMessage(ChatColor.RED+"usage : /totem item [name] [material]");
             return;
