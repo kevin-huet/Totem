@@ -10,17 +10,13 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class ChangeInteractItemCommand implements CommandExecutor {
+public class ChangeInteractItemCommand implements ICommand {
 
     @Override
-    public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
-        if (commandSender instanceof Player && strings.length < 2)
-            return true;
-        assert commandSender instanceof Player;
-        if (!commandSender.hasPermission("totem.change.interact.item"))
-            return true;
-        changeInteractItem((Player) commandSender, strings[0], strings[1]);
-        return false;
+    public void launch(Player player, String[] strings) {
+        if (strings.length < 3)
+            return;
+        changeInteractItem(player, strings[1], strings[2]);
     }
 
     private void changeInteractItem(Player player, String totemName, String materialName) {

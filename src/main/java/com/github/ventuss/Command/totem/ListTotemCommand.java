@@ -10,14 +10,11 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class ListTotemCommand implements CommandExecutor {
+public class ListTotemCommand implements ICommand {
 
     @Override
-    public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
-        if (!commandSender.hasPermission("totem.list"))
-            return true;
-        printTotemList((Player) commandSender);
-        return false;
+    public void launch(Player player, String[] strings) {
+        printTotemList(player);
     }
 
     public void printTotemList(Player player) {
@@ -27,4 +24,5 @@ public class ListTotemCommand implements CommandExecutor {
                 player.sendMessage(ChatColor.GREEN+" - "+game.getName()+" : "+status);
         }
     }
+
 }

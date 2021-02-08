@@ -10,16 +10,13 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class SetTotemCommand extends MessageDefaultValue implements CommandExecutor {
+public class SetTotemCommand extends MessageDefaultValue implements ICommand {
+
     @Override
-    public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
-        if (!(commandSender instanceof Player) && strings.length < 1)
-            return false;
-        assert commandSender instanceof Player;
-        if (!commandSender.hasPermission("totem.set"))
-            return true;
-        createAndSetTotem((Player) commandSender, strings[0]);
-        return false;
+    public void launch(Player player, String[] strings) {
+        if (strings.length < 2)
+            return;
+        createAndSetTotem(player, strings[1]);
     }
 
     private void createAndSetTotem(Player player, String name) {
