@@ -11,17 +11,19 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class ChangeTotemMaterialCommand extends MessageDefaultValue implements CommandExecutor {
+public class ChangeTotemMaterialCommand extends MessageDefaultValue implements ICommand {
 
     @Override
-    public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
-        if (commandSender instanceof Player && strings.length < 2)
-            return true;
-        assert commandSender instanceof Player;
-        if (!commandSender.hasPermission("totem.change.block.material"))
-            return true;
-        changeMaterial((Player) commandSender, strings[0], strings[1]);
-        return false;
+    public void launch(Player player, String[] strings) {
+        if (!player.hasPermission("totem.change.block.material")) {
+            player.sendMessage(ChatColor.RED+"You don't have permission to do that");
+            return;
+        }
+        if (strings.length < 3) {
+            player.sendMessage(ChatColor.RED+"usage : /totem block [name] [material]");
+            return;
+        }
+        changeMaterial(player, strings[1], strings[2]);
     }
 
     private void changeMaterial(Player player, String totemName, String materialName) {
@@ -35,4 +37,5 @@ public class ChangeTotemMaterialCommand extends MessageDefaultValue implements C
         player.sendMessage(ChatColor.GREEN+ChangeMaterial
                 +totem.getName()+" : "+material.toString());
     }
+
 }

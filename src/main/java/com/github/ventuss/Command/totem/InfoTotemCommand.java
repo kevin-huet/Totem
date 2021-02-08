@@ -9,16 +9,19 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class InfoTotemCommand implements CommandExecutor {
+public class InfoTotemCommand implements ICommand {
 
     @Override
-    public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
-        if (strings.length < 1)
-            return true;
-        if (!commandSender.hasPermission("totem.info"))
-            return true;
-        printTotemInfo((Player) commandSender, strings[0]);
-        return false;
+    public void launch(Player player, String[] strings) {
+        if (!player.hasPermission("totem.info")) {
+            player.sendMessage(ChatColor.RED+"You don't have permission to do that");
+            return;
+        }
+        if (strings.length < 2) {
+            player.sendMessage(ChatColor.RED+"usage : /totem info [name]");
+            return;
+        }
+        printTotemInfo(player, strings[1]);
     }
 
     private void printTotemInfo(Player player, String name) {
@@ -35,4 +38,5 @@ public class InfoTotemCommand implements CommandExecutor {
         player.sendMessage(ChatColor.YELLOW+" - Interact item : "+totem.getItemInteract().toString());
 
     }
+
 }

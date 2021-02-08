@@ -10,16 +10,19 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class SpawnTotemCommand extends MessageDefaultValue implements CommandExecutor {
+public class SpawnTotemCommand extends MessageDefaultValue implements ICommand {
+
     @Override
-    public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
-        if (!(commandSender instanceof Player) && strings.length < 1)
-            return false;
-        assert commandSender instanceof Player;
-        if (!commandSender.hasPermission("totem.spawn"))
-            return true;
-        spawnTotem((Player) commandSender, strings[0]);
-        return false;
+    public void launch(Player player, String[] strings) {
+        if (!player.hasPermission("totem.spawn")) {
+            player.sendMessage(ChatColor.RED+"You don't have permission to do that");
+            return;
+        }
+        if (strings.length < 2) {
+            player.sendMessage(ChatColor.RED+"usage : /totem spawn [name]");
+            return;
+        }
+        spawnTotem(player, strings[1]);
     }
 
     private void spawnTotem(Player player, String name) {

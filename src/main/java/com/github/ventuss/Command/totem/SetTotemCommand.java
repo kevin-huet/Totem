@@ -5,31 +5,36 @@ import com.github.ventuss.config.MessageDefaultValue;
 import com.github.ventuss.game.IGame;
 import com.github.ventuss.game.factions.Totem;
 import com.github.ventuss.manager.Manager;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class SetTotemCommand extends MessageDefaultValue implements CommandExecutor {
+public class SetTotemCommand extends MessageDefaultValue implements ICommand {
+
     @Override
-    public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
-        if (!(commandSender instanceof Player) && strings.length < 1)
-            return false;
-        assert commandSender instanceof Player;
-        if (!commandSender.hasPermission("totem.set"))
-            return true;
-        createAndSetTotem((Player) commandSender, strings[0]);
-        return false;
+    public void launch(Player player, String[] strings) {
+        if (!player.hasPermission("totem.set")) {
+            player.sendMessage(ChatColor.RED+"You don't have permission to do that");
+            return;
+        }
+        if (strings.length < 2) {
+            player.sendMessage(ChatColor.RED+"usage : /totem set [name]");
+            return;
+        }
+        createAndSetTotem(player, strings[1]);
     }
 
     private void createAndSetTotem(Player player, String name) {
         IGame totem = Manager.getInstance().totemManager.findByName(name);
-        if (totem == null)
+        if (totem == null) {
             totem = App.getInstance().newGame(name);
+            Manager.getInstance().gameManager.addGame(totem);
+        }
         totem.setLocation(player.getLocation());
         App.manager.configManager.totemConfiguration.setLocationConfig(totem);
         App.manager.configManager.totemConfiguration.setItemInteractionConfig(totem);
-        Manager.getInstance().gameManager.addGame(totem);
         totem.generateTotem();
         player.sendMessage(TotemSet);
     }
