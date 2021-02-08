@@ -1,6 +1,6 @@
 # Totem
 
-![alt text](https://www.spigotmc.org/attachments/screenshot_2-png.592258/)
+![alt text](https://user-images.githubusercontent.com/48879237/107246019-18ae9080-6a30-11eb-858c-5baecbac2cca.png)
 
 What is it ?
 
