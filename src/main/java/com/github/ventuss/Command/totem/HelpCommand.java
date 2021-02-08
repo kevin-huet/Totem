@@ -11,7 +11,7 @@ public class HelpCommand  implements ICommand {
             player.sendMessage(ChatColor.RED+"You don't have permission to do that");
             return;
         }
-        if (strings.length < 2) {
+        if (strings.length < 1) {
             player.sendMessage(ChatColor.RED+"usage: /totem help [optional : page]");
             return;
         }
