@@ -9,13 +9,14 @@ import org.bukkit.entity.Player;
 
 public class GlobalConfiguration extends MessageDefaultValue implements IConfiguration {
 
-    public boolean factionsUUIDEnabled, factionsEnabled, legacyFactionsEnabled = false;
+    public boolean factionsUUIDEnabled, factionsEnabled, legacyFactionsEnabled, townyEnabled = false;
     private FileConfiguration config;
 
     public GlobalConfiguration() {
+        if (Bukkit.getPluginManager().isPluginEnabled("Towny"))
+            this.townyEnabled = true;
         if (Bukkit.getPluginManager().isPluginEnabled("LegacyFactions"))
             this.legacyFactionsEnabled = true;
-
         if (Bukkit.getPluginManager().isPluginEnabled("MassiveCore") && Bukkit.getPluginManager().isPluginEnabled("Factions"))
             this.factionsEnabled = true;
         else if (Bukkit.getPluginManager().isPluginEnabled("Factions"))

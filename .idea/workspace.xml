@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b04f65f5-ba82-4765-aa82-8e0a6e148e31" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ventuss/Command/global/TotemCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ventuss/command/global/TotemCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ventuss/Command/totem/ChangeInteractItemCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ventuss/command/totem/ChangeInteractItemCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ventuss/Command/totem/ChangeTotemMaterialCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ventuss/command/totem/ChangeTotemMaterialCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ventuss/Command/totem/ChangeTotemSizeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ventuss/command/totem/ChangeTotemSizeCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ventuss/Command/totem/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ventuss/command/totem/HelpCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ventuss/Command/totem/ICommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ventuss/command/totem/ICommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ventuss/Command/totem/InfoTotemCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ventuss/command/totem/InfoTotemCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ventuss/Command/totem/ListTotemCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ventuss/command/totem/ListTotemCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ventuss/Command/totem/ResetTotemCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ventuss/command/totem/ResetTotemCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ventuss/Command/totem/SetTotemCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ventuss/command/totem/SetTotemCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ventuss/Command/totem/SpawnTotemCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ventuss/command/totem/SpawnTotemCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ventuss/Command/totem/StopTotemCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ventuss/command/totem/StopTotemCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ventuss/Command/totem/UnsetTotemCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ventuss/command/totem/UnsetTotemCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ventuss/config/GlobalConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ventuss/config/GlobalConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ventuss/game/IGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ventuss/game/IGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ventuss/game/factionsUUID/UUIDTotem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ventuss/game/factionsUUID/UUIDTotem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ventuss/game/towny/TownyTotem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ventuss/game/towny/TownyTotem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ventuss/listener/Factions/FactionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ventuss/listener/factions/FactionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ventuss/listener/Factions/GameListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ventuss/listener/factions/GameListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ventuss/listener/LegacyFactions/LegacyFactionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ventuss/listener/legacyFactions/LegacyFactionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ventuss/listener/LegacyFactions/LegacyGameListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ventuss/listener/legacyFactions/LegacyGameListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ventuss/manager/command/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ventuss/manager/command/CommandManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ventuss/manager/listener/ListenerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ventuss/manager/listener/ListenerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TotemPlugin-1.0-SNAPSHOT-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TotemPlugin-1.0-SNAPSHOT-shaded.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TotemPlugin-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TotemPlugin-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/global/TotemCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/global/TotemCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/ChangeInteractItemCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/ChangeInteractItemCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/ChangeTotemMaterialCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/ChangeTotemMaterialCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/HelpCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/HelpCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/ICommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/ICommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/InfoTotemCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/InfoTotemCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/ListTotemCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/ListTotemCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/ResetTotemCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/ResetTotemCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/SetTotemCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/SetTotemCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/SpawnTotemCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/SpawnTotemCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/StopTotemCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/StopTotemCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/UnsetTotemCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/UnsetTotemCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/changeTotemSizeCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/Command/totem/changeTotemSizeCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/config/GlobalConfiguration$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/config/GlobalConfiguration$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/config/GlobalConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/config/GlobalConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/config/IConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/config/IConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/config/MessageDefaultValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/config/MessageDefaultValue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/config/MessageType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/config/MessageType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/config/SqlConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/config/SqlConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/config/TotemConfiguration$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/config/TotemConfiguration$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/config/TotemConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/config/TotemConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/config/TotemDefaultValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/config/TotemDefaultValue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/game/IGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/game/IGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/game/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/game/Status.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/game/factions/Totem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/game/factions/Totem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/game/factionsUUID/UUIDTotem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/game/factionsUUID/UUIDTotem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/game/legacyFactions/LegacyTotem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/game/legacyFactions/LegacyTotem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/game/towny/TownyTotem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/game/towny/TownyTotem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/listener/Factions/FactionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/listener/Factions/FactionListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/listener/Factions/GameListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/listener/Factions/GameListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/listener/LegacyFactions/LegacyFactionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/listener/LegacyFactions/LegacyFactionListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/listener/LegacyFactions/LegacyGameListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/listener/LegacyFactions/LegacyGameListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/listener/factionsUUID/FactionsUUIDListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/listener/factionsUUID/FactionsUUIDListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/listener/factionsUUID/GameUUIDListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/listener/factionsUUID/GameUUIDListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/manager/IManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/manager/IManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/manager/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/manager/Manager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/manager/command/CommandManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/manager/command/CommandManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/manager/config/ConfigManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/manager/config/ConfigManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/manager/game/FactionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/manager/game/FactionManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/manager/game/GameManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/manager/game/GameManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/manager/game/TotemManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/manager/game/TotemManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/manager/listener/ListenerManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/manager/listener/ListenerManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/utils/ConversionUtilities$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/utils/ConversionUtilities$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/utils/ConversionUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/utils/ConversionUtilities.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/utils/Utilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/utils/Utilities.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/ventuss/utils/WorldUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/ventuss/utils/WorldUtilities.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-TotemPlugin-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-TotemPlugin-1.0-SNAPSHOT.jar" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1neDy94bkja36GH8jfJErrApAUq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b04f65f5-ba82-4765-aa82-8e0a6e148e31" name="Default Changelist" comment="" />
+      <created>1611741916331</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611741916331</updated>
+      <workItem from="1611741917479" duration="4421000" />
+      <workItem from="1611746358665" duration="6148000" />
+      <workItem from="1611754245229" duration="12697000" />
+      <workItem from="1611829401228" duration="32423000" />
+      <workItem from="1611930277913" duration="47432000" />
+      <workItem from="1612452525893" duration="697000" />
+      <workItem from="1612458382621" duration="180000" />
+      <workItem from="1612458602956" duration="4390000" />
+      <workItem from="1612474200409" duration="601000" />
+      <workItem from="1612474813475" duration="69000" />
+      <workItem from="1612474892241" duration="4210000" />
+      <workItem from="1612522739570" duration="6193000" />
+      <workItem from="1612530703084" duration="5395000" />
+      <workItem from="1612545723161" duration="11032000" />
+      <workItem from="1612616423349" duration="38214000" />
+      <workItem from="1612749508968" duration="11103000" />
+      <workItem from="1612801071889" duration="58000" />
+      <workItem from="1612801143683" duration="2584000" />
+      <workItem from="1612818945767" duration="49000" />
+      <workItem from="1612819006788" duration="45000" />
+      <workItem from="1612819064602" duration="2641000" />
+      <workItem from="1612823468326" duration="887000" />
+      <workItem from="1612829480795" duration="2320000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

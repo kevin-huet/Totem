@@ -1,8 +1,0 @@
-name: TotemPlugin
-version: 1.0
-main: com.github.ventuss.App
-author: Ventuss
-softdepend: [Factions, LegacyFactions]
-commands:
-  totem:
-    description: start totem
