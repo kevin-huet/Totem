@@ -100,6 +100,18 @@
       <version>0.96.7.0</version>
       <scope>provided</scope>
     </dependency>
+      <dependency>
+          <groupId>com.github.TownyAdvanced</groupId>
+          <artifactId>Towny</artifactId>
+          <version>0.96.7.0</version>
+          <scope>compile</scope>
+      </dependency>
+    <dependency>
+      <groupId>org.bstats</groupId>
+      <artifactId>bstats-bukkit</artifactId>
+      <version>1.8</version>
+      <scope>compile</scope>
+    </dependency>
   </dependencies>
 </project>
 

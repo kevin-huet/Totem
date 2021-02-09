@@ -1,10 +1,9 @@
 package com.github.ventuss.manager.command;
 
 import com.github.ventuss.App;
-import com.github.ventuss.Command.global.TotemCommand;
-import com.github.ventuss.Command.totem.*;
+import com.github.ventuss.command.global.TotemCommand;
+import com.github.ventuss.command.totem.*;
 import com.github.ventuss.manager.IManager;
-import com.github.ventuss.manager.game.TotemManager;
 
 public class CommandManager implements IManager {
 

@@ -114,7 +114,6 @@ public class UUIDTotem implements IGame {
     }
 
 
-    @Override
     public void victory(Player player) {
         Faction faction = FPlayers.getInstance().getByPlayer(player).getFaction();
         App.getInstance().getServer().broadcastMessage(

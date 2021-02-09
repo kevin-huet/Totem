@@ -4,6 +4,7 @@ import com.github.ventuss.game.IGame;
 import com.github.ventuss.game.factions.Totem;
 import com.github.ventuss.game.factionsUUID.UUIDTotem;
 import com.github.ventuss.game.legacyFactions.LegacyTotem;
+import com.github.ventuss.game.towny.TownyTotem;
 import com.github.ventuss.manager.Manager;
 import com.github.ventuss.utils.Utilities;
 import org.bstats.bukkit.Metrics;
@@ -35,6 +36,8 @@ public class App extends JavaPlugin {
             return new LegacyTotem(name);
         if (Manager.getInstance().configManager.globalConfiguration.factionsUUIDEnabled)
             return new UUIDTotem(name);
+        if (Manager.getInstance().configManager.globalConfiguration.townyEnabled)
+            return new TownyTotem(name);
         return null;
     }
 

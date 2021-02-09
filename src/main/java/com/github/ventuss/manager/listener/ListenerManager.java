@@ -1,12 +1,14 @@
 package com.github.ventuss.manager.listener;
 
 import com.github.ventuss.App;
-import com.github.ventuss.listener.Factions.FactionListener;
-import com.github.ventuss.listener.Factions.GameListener;
-import com.github.ventuss.listener.LegacyFactions.LegacyFactionListener;
-import com.github.ventuss.listener.LegacyFactions.LegacyGameListener;
+import com.github.ventuss.listener.factions.FactionListener;
+import com.github.ventuss.listener.factions.GameListener;
+import com.github.ventuss.listener.legacyFactions.LegacyFactionListener;
+import com.github.ventuss.listener.legacyFactions.LegacyGameListener;
 import com.github.ventuss.listener.factionsUUID.FactionsUUIDListener;
 import com.github.ventuss.listener.factionsUUID.GameUUIDListener;
+import com.github.ventuss.listener.towny.TownGameListener;
+import com.github.ventuss.listener.towny.TownListener;
 import com.github.ventuss.manager.IManager;
 import com.github.ventuss.manager.Manager;
 import org.bukkit.event.Listener;
@@ -27,6 +29,8 @@ public class ListenerManager implements IManager {
             registerLegacyFactionsEvent(pluginManager);
         if (Manager.getInstance().configManager.globalConfiguration.factionsUUIDEnabled)
             registerFactionsUUIDEvent(pluginManager);
+        if (Manager.getInstance().configManager.globalConfiguration.townyEnabled)
+            registerTownyEvent(pluginManager);
     }
 
     private void registerLegacyFactionsEvent(PluginManager pluginManager) {
@@ -46,5 +50,11 @@ public class ListenerManager implements IManager {
         pluginManager.registerEvents(new FactionsUUIDListener(), App.getInstance());
         pluginManager.registerEvents(new GameUUIDListener(), App.getInstance());
         App.getInstance().getLogger().info("Register FactionsUUID events...");
+    }
+
+    private void registerTownyEvent(PluginManager pluginManager) {
+        pluginManager.registerEvents(new TownGameListener(), App.getInstance());
+        pluginManager.registerEvents(new TownListener(), App.getInstance());
+        App.getInstance().getLogger().info("Register Towny events...");
     }
 }
