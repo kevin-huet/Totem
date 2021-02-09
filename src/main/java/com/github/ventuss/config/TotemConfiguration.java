@@ -109,7 +109,7 @@ public class TotemConfiguration extends TotemDefaultValue implements IConfigurat
         List<String> totemName = new ArrayList<String>();
         for(String key : sec.getKeys(false)){
             totemName.add(key);
-            App.getInstance().getLogger().info(key);
+            App.getInstance().getLogger().info("Totem created : "+key);
         }
         for (String s : totemName) {
             IGame totem = App.getInstance().newGame(s);

@@ -35,7 +35,6 @@ public class GameManager implements IManager {
 
     public void addGame(IGame game) {
         this.games.add(game);
-        App.getInstance().getLogger().info("game added : "+game.getName());
     }
 
     public void setGames(List<IGame> games) {

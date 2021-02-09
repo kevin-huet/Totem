@@ -12,7 +12,7 @@ public class TotemCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         CommandManager manager = Manager.getInstance().commandManager;
-        if (strings.length < 2)
+        if (strings.length < 1)
             return true;
         if (!commandSender.hasPermission("totem"))
             return true;

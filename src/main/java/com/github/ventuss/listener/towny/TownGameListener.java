@@ -2,9 +2,7 @@ package com.github.ventuss.listener.towny;
 
 import com.github.ventuss.game.IGame;
 import com.github.ventuss.manager.Manager;
-import com.palmergames.bukkit.towny.TownyUniverse;
 import com.palmergames.bukkit.towny.object.Resident;
-import com.palmergames.bukkit.towny.object.Town;
 import org.bukkit.ChatColor;
 import org.bukkit.Effect;
 import org.bukkit.Material;
@@ -19,7 +17,7 @@ public class TownGameListener implements Listener {
     @EventHandler
     public void onFactionBreakTotemEvent(BlockBreakEvent event) {
         IGame totem = Manager.getInstance().totemManager.findTotemByBlock(event.getBlock());
-        Resident player = TownyUniverse.getInstance().getResident(event.getPlayer().getName());
+        Resident player = (Resident) event.getPlayer();
         if (player == null)
             return;
         if (totem == null)

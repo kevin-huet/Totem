@@ -28,7 +28,6 @@ public class TotemManager implements IManager {
         List<IGame> games = Manager.getInstance().gameManager.getGames();
 
         for (IGame game : games) {
-            App.getInstance().getServer().broadcastMessage(game.getName());
             if (game.getName().equals(name)) {
                 return game;
             }
